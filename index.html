@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Awesome</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/small/64/ffffff/fire-heart.png" type="image/x-icon">
     <style type="text/tailwindcss">
+        :root {
+            --primary: rgb(88, 40, 244);
+            --primary-hover: rgb(69, 29, 200);
+        }
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-family: 'Lobster';
+        }
+        .button {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            text-align: center;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            padding: 0 1rem;
+            padding-left: 1rem;
+            min-height: 3.3rem;
+            font-weight: 600;
+            box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+            transition-property: transforms;
+            transition-duration: .2s;
+            color: white;
+            background-color: var(--primary);
+        }
+        .button:hover {
+            background-color: var(--primary-hover);
+        }
+        .button:active {
+            transform: scale(0.95);
+        }
         .navitems>li>a {
             @apply h-12 px-4 hover:bg-gray-700 rounded-lg flex items-center gap-2
         }
@@ -32,6 +72,15 @@
         </ul>
     </nav>
 </header>
+
+<hero class="grid bg-gray-700 text-white text-center bg-cover bg-[url('https://live.staticflickr.com/8573/28606155253_770091cf9b_o_d.jpg')]">
+    <div class="col-start-1 row-start-1 bg-gray-800 bg-opacity-40 w-full h-full"></div>
+    <div class="col-start-1 row-start-1 py-24 px-10">
+        <h1>Awesome Photos & Captions</h1>
+        <p class="text-lg font-bold mb-5">Share your favorite Photos from Flickr and add a great caption</p>
+        <a class="button" href="">Get Started</a>
+    </div>
+</hero>
     
 </body>
 </html>

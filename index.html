@@ -83,6 +83,14 @@
         .highlight {
             @apply !bg-indigo-100;
         }
+        .titleBlip {
+            animation: 1s fadeIn;
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            10% {opacity: 0;}
+            100% {opacity: 1;}
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -134,7 +142,7 @@
 <hero class="grid bg-gray-700 text-white text-center bg-cover bg-[url('https://live.staticflickr.com/8573/28606155253_770091cf9b_o_d.jpg')]">
     <div class="col-start-1 row-start-1 bg-gray-800 bg-opacity-40 w-full h-full"></div>
     <div class="col-start-1 row-start-1 py-24 px-10">
-        <h1>Awesome Photos & Captions</h1>
+        <h1 class="titleBlip">Awesome Photos & Captions</h1>
         <p class="text-lg font-bold mb-5">Share your favorite Photos from Flickr and add a great caption</p>
         <a class="button" href="">Get Started</a>
     </div>
@@ -155,7 +163,7 @@
                     <img class="w-8 h-8 rounded-full" src="https://img.icons8.com/small/96/A9A9A9/happy.png">
                     <span class="font-bold hover:underline">Lisa</span>
                 </a>
-                <p class="text-5xl mb-10 px-4 font1">Lorem ipsum dolor sit amet.</p>
+                <p class="text-5xl mb-10 font1">Lorem ipsum dolor sit amet.</p>
                 <div class="flex items-center gap-2 text-sm mb-5">
                     <a class="bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-500 hover:text-white" href="">Animals</a>
                     <a class="bg-gray-200 rounded-full px-3 py-1 hover:bg-gray-500 hover:text-white" href="">Cute</a>

@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwind build -i tailwind.css -o ../style.css --watch"
+    "tailwind": "tailwind build -i tailwind.css -o ../style.css --watch",
+    "minify": "cleancss ../style.css -o ../style.min.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clean-css-cli": "^5.6.3",
     "tailwindcss": "^3.4.1"
   }
 }
